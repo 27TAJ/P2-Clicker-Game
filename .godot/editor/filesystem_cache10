@@ -1,0 +1,17 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1791244724
+Bar3.png::CompressedTexture2D::9049901095970419983::1790717194::1790717194::1::::<><><>0<>0<>c8be78bd39d4ae5e825d10cc3522a63a<>res://.godot/imported/Bar3.png-6d196ad44e50331e91621498a50483f3.ctex::
+Button6.png::CompressedTexture2D::6513546956634478219::1790711402::1790711403::1::::<><><>0<>0<>135d8d5026abc078b85b29a4585eaf1a<>res://.godot/imported/Button6.png-daf901030db31100f7c055497d6cc94f.ctex::
+bytebounce.medium.ttf::FontFile::1566580830630441020::1790717358::1790717358::1::::<><><>0<>0<>ae0ba7aeaf5ab6dbb3f73105f3f84d16<>res://.godot/imported/bytebounce.medium.ttf-9972d6e287d0b29616e56b027cb1cefe.fontdata::
+clicker_button.gd::GDScript::5605064628065221492::1788829587::0::1::::<>Control<><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1790739255::0::1::::<><><>0<>0<><>::
+index.apple-touch-icon.png::CompressedTexture2D::3445777273717141440::1790738511::1790738516::1::::<><><>0<>0<>313115f6add2004079545fba4a342b53<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::6798426810651778410::1790738511::1790738516::1::::<><><>0<>0<>368b89f47ad5b0cbfa43dfca4230b70e<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::6541113239136412298::1790738511::1790738517::1::::<><><>0<>0<>d2b79e0b61d83908362b0ade5feef01c<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
+leberch-space-587944.mp3::AudioStreamMP3::6800549549972175903::1790737235::1790737302::1::::<><><>0<>0<>18b8502c5f1a98c45e68eba360fc48f3<>res://.godot/imported/leberch-space-587944.mp3-e442f0826730bb790f966810a1b02307.mp3str::
+node_2d.gd::GDScript::8551447095546244203::1790727972::0::1::::<>Node2D<><>0<>0<><>::
+node_2d.tscn::PackedScene::2067450008304524526::1790738079::0::1::::<><><>0<>0<><>::uid://c0cpqc4mj8gmj::::res://skybox-space.png<>uid://dt3nc4our1mgp::::res://node_2d.gd<>uid://dnwbyult8kafk::::res://scifi-observation-deck-large-window-stars-lounge_20260217_135525.png<>uid://c35ib7qt14dx4::::res://leberch-space-587944.mp3<>uid://cy2hfw0lrrfjn::::res://Button6.png<>uid://d163swp0my8fb::::res://Bar3.png<>uid://wk4mffix11vk::::res://bytebounce.medium.ttf
+README.md::TextFile::-1::1790707601::0::1::::<><><>0<>0<><>::
+rigid_body_2d.tscn::PackedScene::2416471041814526177::1788829587::0::1::::<><><>0<>0<><>::
+scifi-observation-deck-large-window-stars-lounge_20260217_135525.png::CompressedTexture2D::8117237973377140020::1790704664::1790704665::1::::<><><>0<>0<>4ee2483e2ec2c785776d71c6d2fd7770<>res://.godot/imported/scifi-observation-deck-large-window-stars-lounge_20260217_135525.png-8c5a54db8be7409e8851bb2ad0865978.ctex::
+skybox-space.png::CompressedTexture2D::6532630691843691409::1790704688::1790704688::1::::<><><>0<>0<>21bcd1a7d8abba3eed05ebcaccc741c6<>res://.godot/imported/skybox-space.png-348e3e9f46bf3ccaab5cb5a5781b8275.ctex::

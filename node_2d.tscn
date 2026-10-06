@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://4pqund3nukl7"]
+
+[ext_resource type="Texture2D" uid="uid://c0cpqc4mj8gmj" path="res://skybox-space.png" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://dt3nc4our1mgp" path="res://node_2d.gd" id="1_0hol4"]
+[ext_resource type="Texture2D" uid="uid://dnwbyult8kafk" path="res://scifi-observation-deck-large-window-stars-lounge_20260217_135525.png" id="2_epypp"]
+[ext_resource type="AudioStream" uid="uid://c35ib7qt14dx4" path="res://leberch-space-587944.mp3" id="3_d21ai"]
+[ext_resource type="Texture2D" uid="uid://cy2hfw0lrrfjn" path="res://Button6.png" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://d163swp0my8fb" path="res://Bar3.png" id="5_kdubu"]
+[ext_resource type="FontFile" uid="uid://wk4mffix11vk" path="res://bytebounce.medium.ttf" id="6_d21ai"]
+
+[node name="Node2D" type="Node2D" unique_id=1977544729]
+script = ExtResource("1_0hol4")
+
+[node name="space background" type="Sprite2D" parent="." unique_id=664298659]
+position = Vector2(232, -121)
+texture = ExtResource("1_0e48y")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="space background" unique_id=917742616]
+stream = ExtResource("3_d21ai")
+autoplay = true
+
+[node name="space apartment" type="Sprite2D" parent="." unique_id=536974725]
+position = Vector2(400, 400)
+scale = Vector2(4, 4)
+texture = ExtResource("2_epypp")
+
+[node name="Clicker_Button" type="Button" parent="." unique_id=306694904]
+offset_left = 341.0
+offset_top = 370.0
+offset_right = 459.0
+offset_bottom = 448.0
+icon = ExtResource("3_epypp")
+
+[node name="Coin_Box" type="Sprite2D" parent="." unique_id=168605491]
+position = Vector2(401.25006, 326)
+scale = Vector2(1.3968745, 1.1956521)
+texture = ExtResource("5_kdubu")
+
+[node name="Generator_Box" type="Sprite2D" parent="." unique_id=1886159612]
+position = Vector2(133.75008, 41.25)
+scale = Vector2(1.6531247, 1.3369565)
+texture = ExtResource("5_kdubu")
+
+[node name="Coin_Counter" type="Label" parent="." unique_id=226633013]
+offset_left = 310.0
+offset_top = 310.0
+offset_right = 437.0
+offset_bottom = 357.0
+theme_override_fonts/font = ExtResource("6_d21ai")
+theme_override_font_sizes/font_size = 44
+text = "Coins: 0"
+
+[node name="Generator_Counter" type="Label" parent="." unique_id=1056095784]
+offset_left = 15.0
+offset_top = 25.0
+offset_right = 232.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("6_d21ai")
+theme_override_font_sizes/font_size = 44
+text = "Generators: 0"
+
+[node name="Generator_Button" type="Button" parent="." unique_id=571544970]
+offset_left = 554.0
+offset_top = 110.0
+offset_right = 672.0
+offset_bottom = 188.0
+icon = ExtResource("3_epypp")
+
+[node name="Timer" type="Timer" parent="Generator_Button" unique_id=510528253]
+wait_time = 2.0
+autostart = true
+
+[node name="Generator_Label" type="Label" parent="." unique_id=692764819]
+offset_left = 462.0
+offset_top = 7.0
+offset_right = 791.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("6_d21ai")
+theme_override_font_sizes/font_size = 40
+text = "Press to buy 1 generator (1.5 coins/sec) requires 50 coins"
+autowrap_mode = 2
+
+[connection signal="pressed" from="Clicker_Button" to="." method="_on_clicker_button_pressed"]
+[connection signal="pressed" from="Generator_Button" to="." method="_on_generator_button_pressed"]
+[connection signal="timeout" from="Generator_Button/Timer" to="." method="_on_timer_timeout"]
